@@ -13,3 +13,5 @@ with open('response.json') as json_file:
     data = json.load(json_file)
 for symbol in data:
     print(symbol['symbol'])
+    f = open("output.txt", "a")
+    f.write(symbol['symbol'] + "\n")
